@@ -9,8 +9,8 @@
      name: "{{ item }}"
      exeutable: pip3.9
     loop:
-    -cryptography
-    -PYMYSQL
+    - cryptography
+    - PyMySQL
  - name: install mysqul-server
    ansible.builtin.package:
     name: mysqul-server
