@@ -11,7 +11,7 @@
     loop:
     - cryptography
     - PyMySQL
- - name: install mysqul-server
+  - name: install mysqul-server
    ansible.builtin.package:
     name: mysqul-server
     state: installed
