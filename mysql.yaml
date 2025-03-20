@@ -1,6 +1,6 @@
 - name: configure mysqul-server
   hosts: mysql
-  become:  yes 
+  become: yes 
   vars:
    mysql_root_password:  ExpenseApp@1
   tasks:  
@@ -12,14 +12,14 @@
     - cryptography
     - PyMySQL
   - name: install mysqul-server
-   ansible.builtin.package:
-    name: mysqul-server
-    state: installed
+    ansible.builtin.package:
+     name: mysqul-server
+     state: installed
   - name: start and enable mysqul-server
     ansible.builtin.service:
-    name: mysqld
-    state: started
-    enabled: yes
+     name: mysqld
+     state: started
+     enabled: yes
   - name: connect to mysqul-server
     community.mysql.mysql_info:
      login_user: root
