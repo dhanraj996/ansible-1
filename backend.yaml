@@ -57,3 +57,10 @@
      login_password: ExpenseApp@1
      login_host: mysql.devops2024.fun
      target: /app/schema/backend.sql
+
+  - name: demon reload and restart backend.service
+    ansible .builtin.systemd_service:
+     enable: true
+     state: restarted
+     demon_reload: true
+     name: backend
