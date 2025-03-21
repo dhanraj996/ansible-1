@@ -14,7 +14,7 @@
   - name: Install MySQL server
     ansible.builtin.dnf:
      name: mysqul-server
-     state: installed
+     state: present
   - name: start and enable mysqul-server
     ansible.builtin.service:
      name: mysqld
