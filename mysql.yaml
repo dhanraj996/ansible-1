@@ -7,7 +7,7 @@
   - name: Install mysqul libraries
     ansible.builtin.pip:
      name: "{{ item }}"
-     exeutable: /usr/bin/python3
+     executable: pip3.9
     loop:
     - cryptography
     - PyMySQL
