@@ -13,8 +13,8 @@
     - PyMySQL
   - name: Install MySQL server
     ansible.builtin.dnf:
-     name: mysqul-server
-     state: present
+     name: mysql-server
+     state: installed
   - name: start and enable mysqul-server
     ansible.builtin.service:
      name: mysqld
