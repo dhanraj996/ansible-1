@@ -33,7 +33,7 @@
      src: /tmp/frontend.zip
      dest: /usr/share/nginx/html
 
-  - name: opy expense configure
+  - name: copy expense configure
     ansible.builtin.copy:
      src: expense.conf
      dest: /etc/nginx/default.d/expense.conf
