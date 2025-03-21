@@ -29,7 +29,7 @@
      dest: /tmp/frontend.zip  
 
   - name: unzip frontend code
-    ansible.builtin.unarhive:
+    ansible.builtin.unarchive:
      src: /tmp/frontend.zip
      dest: /usr/share/nginx/html
 
