@@ -11,8 +11,8 @@
     loop:
     - cryptography
     - PyMySQL
-  - name: install mysqul-server
-    ansible.builtin.package:
+  - name: Install MySQL server
+    ansible.builtin.dnf:
      name: mysqul-server
      state: installed
   - name: start and enable mysqul-server
